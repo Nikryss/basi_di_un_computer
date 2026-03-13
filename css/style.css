@@ -158,11 +158,11 @@
 =========================================== */
 main {
     padding: 30px;
-    max-width: 1600px;
     margin: auto;
 }
 
 .content-box {
+    max-width: 1600px;
     background: white;
     padding: 40px;
     border-radius: 10px;
