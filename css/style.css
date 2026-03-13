@@ -41,16 +41,16 @@
 
 .sidebar {
     position: fixed;
-    right: -260px;
+    right: -320px;
     top: 0;
 
-    width: 260px;
+    width: 320px;
     height: 100%;
     background: #020617;
 
     padding-top: 20px;
 
-    transition: 0.3s;
+    transition: 0.45s ease;
 
     display: flex;
     flex-direction: column;
@@ -74,12 +74,12 @@
     font-family: monospace;
 }
 
-/* CLOSE BUTTONO */
+/* CLOSE BUTTON */
 .close-btn {
     background: none;
     border: none;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
 }
 
@@ -88,10 +88,9 @@
     color: #94a3b8;
     text-decoration: none;
 
-    padding: 15px 30px;
+    padding: 18px 28px;
     font-family: monospace;
-
-    transition: 0.2s;
+    font-size: 18px;
 }
 
 .sidebar a:hover {
@@ -99,8 +98,41 @@
     color: #38bdf8;
 }
 
+/* BLOCCO SCORRIMENTO */
+.no-scroll {
+    overflow: hidden;
+}
+
 /* ================================= */
 
+
+/*====================================
+    OVERLAY SIDEBAR
+====================================== */
+.overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(5px);
+    background: rgba(0,0,0,0.3);
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: 0.3s;
+    z-index: 900;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*==================================== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;

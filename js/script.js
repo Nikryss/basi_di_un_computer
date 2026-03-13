@@ -19,31 +19,31 @@ function showSection(sectionId) {
 function toggleMenu() {
     
     const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+
     sidebar.classList.toggle("open");
+    overlay.classList.toggle("active");
+
+    document.body.classList.toggle("no-scroll");
+
 }
 
 function closeMenu() {
-    
+
     const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+
     sidebar.classList.remove("open");
+    overlay.classList.remove("active");
+
+    document.body.classList.remove("no-scroll");
+
 }
 
-/* =============================================
-    Funzione per la chiusura della Sidebar cliccando fuori
-================================================ */
-document.addEventListener("click", function(event) {
-
-    const sidebar = document.getElementById("sidebar");
-    const menuIcon = document.getElementById(".menu-icon");
-
-    if (
-        sidebar.classList.contains("open") &&
-        !sidebar.contains(event.target) &&
-        !menuIcon.contains(event.target)
-    ){
-        closeMenu()
-    }
-});
+/* =====================================================
+    Chiusura cliccando Overlay
+======================================================== */
+document.getElementById("overlay").addEventListener("click", closeMenu);
 
 /*================================================ 
     Funzione per chiudere la SideBar quando si seleziona una categoria
