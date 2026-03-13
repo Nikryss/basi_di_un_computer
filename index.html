@@ -10,15 +10,30 @@
         <!-- HEADER del Sito
             Da sistemare 
         -->
-        <header>
-            <h1>Le basi di un Computer</h1>
-            <nav>
-                <button onclick="showSection('cpu')">CPU</button>
-                <button onclick="showSection('ram')">RAM</button>
-                <button onclick="showSection('storage')">Storage</button>
-                <button onclick="showSection('input')">Input/Output</button>
-            </nav>
+        <header class="header">
+
+            <div class="header-container">
+
+                <div class="menu-icon" onclick="toggleMenu()">
+                    ☰
+                </div>
+
+                <h1 class="logo">Computer Basics</h1>
+
+            </div>
+
         </header>
+
+        <!-- SIDEBAR MENU
+            Label dove verranno messe tutte le lezioni che verranno trattate sul sito web
+        -->
+        <div id="sidebar" class="sidebar">
+            <a href="index.html">Home</a>
+            <a href="#">Lezione 1</a>
+            <a href="#">Lezione 2</a>
+            <a href="#">Lezione 3</a>
+            <a href="#">Lezione 4</a>
+        </div>
         
         <main>
 

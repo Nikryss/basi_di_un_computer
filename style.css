@@ -1,27 +1,82 @@
+/* ================================
+    HEADER
+=================================== */
+
+.header {
+    background: #0f172a;
+    border-bottom: 2px solid #1e293b;
+    padding: 15px 25px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #38bdf8;
+    font-family: monospace;
+    font-size:22px;
+    letter-spacing: 2px;
+}
+
+/* MENU ICON */
+.menu-icon {
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-icon:hover {
+    color: #38bdf8;
+}
+
+/* ================================ */
+
+/* ================================
+    SIDEBAR
+=================================== */
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+
+    width: 250px;
+    height: 100%;
+    background: #020617;
+
+    padding-top: 80px;
+
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    color: #94a3b8;
+    text-decoration: none;
+
+    padding: 15px 30px;
+    font-family: monospace;
+
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background: #0f172a;
+    color: #38bdf8;
+}
+
+/* ================================= */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #f4f4f4;
-}
-
-header {
-    background: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav button {
-    margin: 5px;
-    padding: 10px 15px;
-    border: none;
-    background: #3498db;
-    color: white;
-    cursor: pointer;
-}
-
-nav button:hover {
-    background: #2980b9
 }
 
 main {

@@ -12,3 +12,17 @@ function showSection(sectionId) {
 
     document.getElementById(sectionId).classList.add("active");
 }
+
+/* ======================================
+    Funzione per aprire la SideBar dell'header
+========================================= */
+function toggleMenu() {
+    
+    let sidebar = document.getElementById("sidebar");
+
+    if(sidebar.style.left === "0px") {
+        sidebar.style.left = "-250px";
+    } else {
+        sidebar.style.left = "0px";
+    }
+}
