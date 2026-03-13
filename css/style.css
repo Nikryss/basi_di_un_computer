@@ -5,17 +5,19 @@
 .header {
     background: #0f172a;
     border-bottom: 2px solid #f4f4f4;
+    width: 100%;
 }
 
 .header-container {
-    max-width: 100%;
+    max-width: 80%;
     margin: auto;
     
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 15px 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .logo {
@@ -168,6 +170,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 40px 15px rgba(0,0,0,0.08);
 
+    margin-top: 20px;
     padding: 15px 20px;
 }
 
