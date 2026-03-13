@@ -163,14 +163,13 @@ main {
 }
 
 .content-box {
-    max-width: 100%;
+    max-width: 80%;
     background: white;
-    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 40px 15px rgba(0,0,0,0.08);
 
-    margin-top: 20px;
-    padding: 15px 20px;
+    margin-top: 50px;
+    padding: 20px 30px;
 }
 
 /* ======================================== */
