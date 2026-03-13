@@ -8,7 +8,7 @@
 }
 
 .header-container {
-    max-width: 1500px;
+    max-width: 1550px;
     margin: auto;
     
     display: flex;
@@ -27,7 +27,7 @@
 
 /* MENU ICON */
 .menu-icon {
-    font-size: 26px;
+    font-size: 20px;
     color: white;
     cursor: pointer;
     transition: 0.3s;
