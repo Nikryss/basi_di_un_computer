@@ -156,6 +156,8 @@ body {
 
 main {
     padding: 30px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 /* Parte dedicata alle Section con le diverse spiegazioni
@@ -174,3 +176,37 @@ main {
 .active {
     display: block;
 }
+
+/* =====================================
+    MOBILE
+======================================== */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        font-size: 24px;
+    }
+
+    .sidebar {
+        width: 85%;
+        right: -85%;
+    }
+
+    .sidebar a {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+}
+
+
+/* ===================================== */
