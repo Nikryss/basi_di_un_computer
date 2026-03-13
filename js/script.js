@@ -40,16 +40,6 @@ function closeMenu() {
 
 }
 
-/* =====================================================
-    Chiusura cliccando Overlay
-======================================================== */
-document.addEventListener("click", function(e) {
-
-    if(e.target.classList.contains("menu-link")) {
-        closeMenu();
-    }
-});
-
 /*================================================ 
     Funzione per chiudere la SideBar quando si seleziona una categoria
 ================================================== */
