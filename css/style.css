@@ -41,21 +41,49 @@
 
 .sidebar {
     position: fixed;
-    left: -250px;
+    right: -260px;
     top: 0;
 
-    width: 250px;
+    width: 260px;
     height: 100%;
     background: #020617;
 
-    padding-top: 80px;
+    padding-top: 20px;
 
     transition: 0.3s;
 
     display: flex;
     flex-direction: column;
+
+    z-index: 1000;
 }
 
+.sidebar.open {
+    right: 0;
+}
+
+/* HEADER SIDEBAR */ 
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
+    color: white;
+    font-family: monospace;
+}
+
+/* CLOSE BUTTONO */
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* LINKS */
 .sidebar a {
     color: #94a3b8;
     text-decoration: none;

@@ -14,15 +14,40 @@ function showSection(sectionId) {
 }
 
 /* ======================================
-    Funzione per aprire la SideBar dell'header
+    Funzioni per aprire/chiudere la SideBar dell'header
 ========================================= */
 function toggleMenu() {
     
     const sidebar = document.getElementById("sidebar");
-
-    if(sidebar.style.left === "0px") {
-        sidebar.style.left = "-250px";
-    } else {
-        sidebar.style.left = "0px";
-    }
+    sidebar.classList.toggle("open");
 }
+
+function closeMenu() {
+    
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.remove("open");
+}
+
+/* =============================================
+    Funzione per la chiusura della Sidebar cliccando fuori
+================================================ */
+document.addEventListener("click", function(event) {
+
+    const sidebar = document.getElementById("sidebar");
+    const menuIcon = document.getElementById(".menu-icon");
+
+    if (
+        sidebar.classList.contains("open") &&
+        !sidebar.contains(event.target) &&
+        !menuIcon.contains(event.target)
+    ){
+        closeMenu()
+    }
+});
+
+/*================================================ 
+    Funzione per chiudere la SideBar quando si seleziona una categoria
+================================================== */
+document.getElementById(".menu-link").forEach(link => {
+    link.addEventListener("click", closeMenu);
+})
