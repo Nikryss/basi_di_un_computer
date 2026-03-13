@@ -158,17 +158,13 @@
 /*=========================================
     MAIN CONTENT
 =========================================== */
-main {
-    margin: auto;
-}
-
 .content-box {
     max-width: 80%;
     background: white;
     border-radius: 10px;
     box-shadow: 0 40px 15px rgba(0,0,0,0.08);
 
-    margin-top: 50px;
+    margin: 50px auto auto auto;
     padding: 20px 30px;
 }
 
