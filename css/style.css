@@ -9,7 +9,8 @@
 }
 
 .header-container {
-    max-width: 1300px;
+    max-width: 1500px;
+    max-height: 100px;
     margin: auto;
     
     display: flex;
@@ -22,7 +23,7 @@
 .logo {
     color: white;
     font-family: "JetBrains Mono", monospace;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 2px;
 }
 
