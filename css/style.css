@@ -72,15 +72,30 @@
 
     color: white;
     font-family: monospace;
+    font-size: 22px;
 }
 
 /* CLOSE BUTTON */
 .close-btn {
-    background: none;
+    appearance: none;
+    -webkit-appearance: none;
+
+    background: transparent;
     border: none;
+    outline: none;
+
     color: white;
-    font-size: 22px;
+
+    font-size: 24px;
+    font-weight: bold;
+
     cursor: pointer;
+
+    padding: 0;
+}
+
+.close-btn:hover {
+    color: #38bdf8;
 }
 
 /* LINKS */
