@@ -169,21 +169,6 @@ html {
 /*==================================== */
 
 /*=========================================
-    MAIN CONTENT
-=========================================== */
-.content-box {
-    max-width: 80%; /* La grandezza massima che prende (non prende tutto l'header lasciando dello spazio laterale) */
-    background: white; /* Colore background del contenitore: bianco */
-    border-radius: 10px; /* Quanto sono smussati i bordi del contenitore */
-    box-shadow: 0 40px 15px rgba(0,0,0,0.08); /* Ombre del contenitore: box-shadow: [spostamento orizzontale] [spostamento verticale] [sfocatura] [colore] */
-
-    margin: 50px auto auto auto; /* Margini esterno del contenitore con il resto degli elementi. Sopra è l'unico valore costante, il resto è automatico per centrarlo */
-    padding: 20px 30px; /* Distanza interna degli elementi. Solo sopra e in basso, ai lati è automatico */
-}
-
-/* ======================================== */
-
-/*=========================================
     HERO BANNER
 =========================================== */
 .hero {
@@ -334,7 +319,7 @@ html {
     display: flex; /* Strumento flexbox per allineare gli elementi su un asse orizzontale */
     gap: 40px;  /* Distanza minima tra i contenuti all'interno del contenitore */
 
-    height: 500px; /* DATO TEMPORANEO PER VISUALIZZAZIONE */
+    height: auto;
 
     align-items: center; /* Allineamento centrale orizzontalmente dei elementi nel contenitore */
 }
