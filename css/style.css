@@ -184,6 +184,8 @@
     display: flex; /* Strumento flexbox per allineare gli elementi su un asse orizzontale */
     gap: 40px;  /* Distanza minima tra i contenuti all'interno del contenitore */
 
+    height: 500px; /* DATO TEMPORANEO PER VISUALIZZAZIONE */
+
     align-items: center; /* Allineamento centrale orizzontalmente dei elementi nel contenitore */
 }
 
