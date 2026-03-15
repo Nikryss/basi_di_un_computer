@@ -1,3 +1,10 @@
+/*=================================
+    REGOLE GENERALI
+====================================*/
+html {
+    scroll-behavior: smooth; /* Per aggiungere uno scroll più fluido */
+}
+
 /* ================================
     HEADER
 =================================== */
@@ -175,6 +182,71 @@
 }
 
 /* ======================================== */
+
+/*=========================================
+    HERO BANNER
+=========================================== */
+.hero {
+    
+    height: 100vh; /* vh = viewport height. Prendi il 100% dell'altezza della viewport (ciò che vedi a schermo) */
+
+    display: flex; /* Strumento flexbox per allineare gli elementi su un asse orizzontale */
+    align-items: center; /* Gli elementi sono centrati verticalmente */
+    justify-content: center; /* Il contenuto viene allineato centralmente */
+
+    text-align: center; /* Il testo che viene scritto al suo interno viene messo centralmente */
+
+    background: linear-gradient( /* Colore gradiente dello sfondo insieme a una immagine */
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("images/hero-bg.png");
+
+    background-size: cover; /* Copre completamente l'elemento, anche se deve essere ritagliata */
+    background-position: center; /* Allineamento centrale del contenuto del background */
+
+    color: white; /* Colore degli elementi al suo interno: Bianco */
+
+}
+
+.hero-content {
+
+    max-width: 700px; /* Grandezza massima del contenuto all'interno del Hero banner */
+    padding: 20px; /* Distanza interna dai bordi del contenitore */
+
+}
+
+.hero h1 {
+
+    font-size: 48px; /* Grandezza del testo all'interno del hero banner */
+    margin-bottom: 20px; /* Distaza esterna dal bordo inferiore del contenitore */
+
+}
+
+.hero p {
+    
+    font-size: 20px; /* Grandezza del testo all'interno del hero banner */
+    margin-bottom: 30px; /* Distanza esterna dal bordo inferiore del contenitore */
+
+}
+
+.hero-button {
+
+    padding: 12px 24px; /* Distanza interna dal bordo superiore e inferiore del contenitore */
+
+    background: #38bdf8; /* Colore del background del pulsante: Azzurro */
+    color: black; /* Colore del testo all'interno del bottone */
+
+    text-decoration: none; /* Nessuna decorazione del testo all'interno del bottone */
+
+    border-radius: 6px; /* Angoli smussati del pulsante */
+
+    font-weight: bold; /* Peso del testo: grassetto */
+
+}
+
+
+/*========================================= */
 
 /*==========================================
     CONTENT LAYOUT
