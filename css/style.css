@@ -175,6 +175,47 @@
 }
 
 /* ======================================== */
+
+/*===========================================
+    FOOTER
+============================================= */
+.footer {
+    margin-top: 60px; /* Distanza esterna superiore agli elementi */
+
+    background: #0f172a; /* Colore di sfondo del footer: Blu mezzanotte */
+    border-top: 2px solid #f4f4f4; /* Bordo sopra il footer per evidenziare la divisione */
+
+
+}
+
+.footer-container {
+
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+
+    color: #94a3b8;
+    font-family: monospace;
+    font-size: 14px;
+
+}
+
+.footer-author {
+
+    color: #64748b;
+    font-size: 14px;
+
+}
+
+
 body {
     font-family: Arial, sans-serif; 
     margin: 0;
