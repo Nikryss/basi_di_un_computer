@@ -200,7 +200,7 @@ html {
         rgba(0,0,0,0.6),
         rgba(0,0,0,0.6)
     ),
-    url("images/hero-bg.png");
+    url("../images/hero-bg.png");
 
     background-size: cover; /* Copre completamente l'elemento, anche se deve essere ritagliata */
     background-position: center; /* Allineamento centrale del contenuto del background */
