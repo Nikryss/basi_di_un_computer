@@ -187,6 +187,8 @@ html {
     HERO BANNER
 =========================================== */
 .hero {
+
+    position: relative;
     
     height: 100vh; /* vh = viewport height. Prendi il 100% dell'altezza della viewport (ciò che vedi a schermo) */
 
@@ -211,8 +213,25 @@ html {
 
 .hero-content {
 
+    position: relative;
+    z-index: 2;
+
     max-width: 700px; /* Grandezza massima del contenuto all'interno del Hero banner */
     padding: 20px; /* Distanza interna dai bordi del contenitore */
+
+}
+
+.hero-overlay {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.6);
 
 }
 
@@ -243,6 +262,53 @@ html {
 
     font-weight: bold; /* Peso del testo: grassetto */
 
+}
+
+/* SCROLL INDICATOR */
+.scroll-indicator {
+
+    position: absolute;
+
+    bottom: 40px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 2;
+
+}
+
+.scroll-indicator span {
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+
+    transform: rotate(45deg);
+
+    animation: scroll-arrow 2s infinite;
+}
+
+/* ANIMAZIONE SCROLL INDICATOR */
+@keyframes scroll-arrow {
+
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(10px, 10px);
+    }
 }
 
 
