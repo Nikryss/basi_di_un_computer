@@ -196,10 +196,6 @@ body {
     MOBILE
 ======================================== */
 @media (max-width: 768px) {
-    main {
-        padding: 20px;
-    }
-
     .logo {
         font-size: 20px;
     }
