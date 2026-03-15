@@ -3,40 +3,43 @@
 =================================== */
 
 .header {
-    background: #0f172a;
-    border-bottom: 2px solid #f4f4f4;
-    width: 100%;
+    background: #0f172a; /* Colore sfondo Header: Blu mezzanotte */
+    border-bottom: 2px solid #f4f4f4; /* Bordo sotto l'Header per evidenziare la divisione */
+    width: 100%; /* Grandezza totale dell'Header */
 }
 
+/* Contenitore dove vengono racchiusi i elementi da mostrare nell'Header */
 .header-container {
-    max-width: 80%;
-    margin: auto;
+    max-width: 80%; /* La grandezza massima che prende (non prende tutto l'header lasciando dello spazio laterale */
+    margin: auto; /* Margine automatico per centrarlo */
     
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; /* Strumento flexbox per allineare gli elementi su un asse orizzontale */
+    align-items: center; /* Gli elementi sono centrati verticalmente */
+    justify-content: space-between; /* Mette dello spazio tra gli elementi proporzionalmente a quanto è grande il container */
 
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 20px; /* Quanda distanza ha l'elemento interno al contenitore dalla parte sopra */
+    padding-bottom: 20px; /* Quanda distanza ha l'elemento interno al contenitore dalla parte sotto */
 }
 
+/* Titolo del sito contenuto nell'Header */
 .logo {
-    color: white;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 18px;
-    letter-spacing: 2px;
+    color: white; /* Colore testo: Bianco */
+    font-family: "JetBrains Mono", monospace; /* Font che ha il testo */
+    font-size: 18px; /* Grandezza del testo */
+    letter-spacing: 2px; /* Spazio delle lettere del testo */
 }
 
-/* MENU ICON */
+/* Icona per il menu Hamburger */
 .menu-icon {
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
+    font-size: 20px; /* Grandezza dell'icona */
+    color: white; /* Colore dell'icona */
+    cursor: pointer; /* Come viene visualizzato il cursore quando si fa Hover */
+    transition: 0.3s; /* Effetto visivo di transizione colore quando si fa Hover */
 }
 
+/* Come cambia l'icona quando si fa Hover */
 .menu-icon:hover {
-    color: #38bdf8;
+    color: #38bdf8; /* Colore Icona mentre Hover: Blu */
 }
 
 /* ================================ */
@@ -46,111 +49,114 @@
 =================================== */
 
 .sidebar {
-    position: fixed;
-    right: -320px;
-    top: 0;
+    position: fixed; /* L'elemento rimane sempre visibile anche se si scorre la pagina. Non si muove */
+    right: -320px; /* Permette di nascondere l'elemento fuori dallo schermo */
+    top: 0; /* Metti l'elemento attaccato al bordo superiore dello schermo */
 
-    width: 320px;
-    height: 100%;
-    background: #020617;
+    width: 320px; /* Grandezza Sidebar */
+    height: 100%; /* Prendi la grandezza massima dello schermo */
+    background: #020617; /* Colore di sfondo Sidebar: Blu mezzanotte */
 
-    padding-top: 20px;
+    padding-top: 20px; /* Quanda distanza ha l'elemento interno al contenitore dalla parte sopra */
 
-    transition: 0.45s ease;
+    transition: 0.45s ease; /* Tempo impiegato in cui scorre all'interno dello schermo con un scorrimento morbido: inizio lento - veloce - fine lenta */
 
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Strumento flexbox per allineare gli elementi su un asse orizzontale */
+    flex-direction: column; /* Cambio il tipo di allineamento degli elementi mettendoli su un asse verticale */
 
-    z-index: 1000;
+    z-index: 1000; /* Questo elemento ha priorità su tutto. Va sopra a tutto. Z = profondità */
 }
 
+/* Quando la Sidebar è aperta */
 .sidebar.open {
-    right: 0;
+    right: 0; /* L'elemento viene visualizzato con un scorrimento verso sinistra fluido */
 }
 
 /* HEADER SIDEBAR */ 
 .sidebar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Strumento flexbox per allineare gli elementi su un asse orizzontale */
+    justify-content: space-between; /* Mette dello spazio tra gli elementi proporzionalmente a quanto è grande il container */
+    align-items: center; /* Gli elementi sono centrati verticalmente */
 
-    padding: 20px;
+    padding: 20px; /* Distanza interna dei elementi dai bordi del contenitore */
 
-    color: white;
-    font-family: monospace;
-    font-size: 22px;
+    color: white; /* Colore dei elementi contenuti nel contenitore */
+    font-family: monospace; /* Tipo di font dei testi contenuti nel contenitore */
+    font-size: 22px; /* Grandezza dei testi contenuti nel contenitore */
 }
 
 /* CLOSE BUTTON */
 .close-btn {
-    appearance: none;
-    -webkit-appearance: none;
+    appearance: none; /* Disattivo l'aspetto grafico predefinito dal motore di ricerca */
+    -webkit-appearance: none; /* Disattivo l'aspetto grafico predefinito dell'estensione WebKit specifica del motore di ricerca */
 
-    background: transparent;
-    border: none;
-    outline: none;
+    background: transparent; /* Disattivo il background predefinito dell'icona */
+    border: none; /* Disattivo i bordi predefiniti dell'icona */
+    outline: none; /* Disattivo il contorno di evidenziazione che il browser mostra di default durante l'Hover */
 
-    color: white;
+    color: white; /* Colore dell'icona */
 
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 24px; /* Grandezza dell'icona */
+    font-weight: bold; /* Peso dell'icona: in questo caso in grassetto */
 
-    cursor: pointer;
+    cursor: pointer; /* Come viene visualizzato il cursore quando si fa Hover */
 
-    padding: 0;
+    padding: 0; /* Zero distanza interna dai bordi del contenitore: forzatura cosi che non prenda questo dato dal "Sidebar-header" */
 }
 
+/* Cambiamento quando si fa Hover sopra il pulsante di chiusura Sidebar */
 .close-btn:hover {
-    color: #38bdf8;
+    color: #38bdf8; /* Colore: Blu */
 }
 
-/* LINKS */
+/* Categorie presenti nella sidebar */
 .sidebar a {
-    color: #94a3b8;
-    text-decoration: none;
+    color: #94a3b8; /* Colore: Bianco */ 
+    text-decoration: none; /* Nessuna decorazione: senza questo, i testi verrebbero sottolineati come normali link */
 
-    padding: 18px 28px;
-    font-family: monospace;
-    font-size: 18px;
+    padding: 18px 28px; /* Ha una distanza interna sopra e sotto degli elementi: padding: sopra sotto sinistra destra */
+    font-family: monospace; /* Che font hanno i testi delle categorie */
+    font-size: 18px; /* Grandezza del font delle categorie */
 }
 
-.sidebar a:hover {
-    background: #0f172a;
-    color: #38bdf8;
+/* Quando si fa Hover sulle categorie della Sidebar */
+.sidebar a:hover { 
+    background: #0f172a; /* Il background prende un colore più chiaro */
+    color: #38bdf8; /* Il testo prende il colore Blu */
 }
 
-/* BLOCCO SCORRIMENTO */
+/* BLOCCO SCORRIMENTO quando sidebar aperta dei contenuti dietro */
 .no-scroll {
-    overflow: hidden;
+    overflow: hidden; /* Nasconde gli elementi che escono dai bordi della Sidebar */
 }
 
 /* ================================= */
 
 
 /*====================================
-    OVERLAY SIDEBAR
+    OVERLAY SIDEBAR: sfoca il contenuto dietro alla Sidebar
 ====================================== */
 .overlay {
-    position: fixed;
+    position: fixed; /* L'elemento rimane sempre visibile anche se si scorre la pagina. Non si muove */
 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; /* Metti l'elemento attaccato al bordo superiore dello schermo */
+    left: 0; /* Metti l'elemento attaccato al bordo sinistro dello schermo */
+    width: 100%; /* Prende la grandezza massima dello schermo */
+    height: 100%; /* Prende l'altezza massima dello schermo */
 
-    backdrop-filter: blur(5px);
-    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px); /* L'elemento che ha questo tag viene sfocato */
+    background: rgba(0,0,0,0.3); /* Colore del background RGBA */
 
-    opacity: 0;
-    pointer-events: none;
+    opacity: 0; /* Opacità dell'elemento: quando la sidebar non è attiva */
+    pointer-events: none; /* L'elemento non può ricevere nessun input quando si seleziona */
 
-    transition: 0.3s;
-    z-index: 900;
+    transition: 0.3s; /* Quanto tempo ci vuole per la transizione da sfondo chiaro a sfocato */
+    z-index: 900; /* Questo elemento ha priorità su tutto a parte la sidebar. Va sopra a tutto ma sotto alla sidebar. Z = profondità */
 }
 
 .overlay.active {
-    opacity: 1;
-    pointer-events: auto;
+    opacity: 1; /* Opacità dell'elemento: quando la sidebar è attiva */
+    pointer-events: auto; /* L'elemento può ricevere input quando si seleziona */
 }
 
 /*==================================== */
@@ -159,28 +165,20 @@
     MAIN CONTENT
 =========================================== */
 .content-box {
-    max-width: 80%;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 40px 15px rgba(0,0,0,0.08);
+    max-width: 80%; /* La grandezza massima che prende (non prende tutto l'header lasciando dello spazio laterale) */
+    background: white; /* Colore background del contenitore: bianco */
+    border-radius: 10px; /* Quanto sono smussati i bordi del contenitore */
+    box-shadow: 0 40px 15px rgba(0,0,0,0.08); /* Ombre del contenitore: box-shadow: [spostamento orizzontale] [spostamento verticale] [sfocatura] [colore] */
 
-    margin: 50px auto auto auto;
-    padding: 20px 30px;
+    margin: 50px auto auto auto; /* Margini esterno del contenitore con il resto degli elementi. Sopra è l'unico valore costante, il resto è automatico per centrarlo */
+    padding: 20px 30px; /* Distanza interna degli elementi. Solo sopra e in basso, ai lati è automatico */
 }
 
 /* ======================================== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; 
     margin: 0;
     background: #0f172a;
-}
-
-/* Parte dedicata alle Section con le diverse spiegazioni
-    Finche non viene selezionata dalla Nav Bar, il contenuto non viene visualizzato
-*/
-.content {
-    display: none;
-    animation: fade 0.5s;
 }
 
 @keyframes fade {
@@ -197,25 +195,25 @@ body {
 ======================================== */
 @media (max-width: 768px) {
     .logo {
-        font-size: 20px;
+        font-size: 20px; /* Grandezza del testo da mobile */
     }
 
     .menu-icon {
-        font-size: 24px;
+        font-size: 24px; /* Grandezza dell'icona Hamburger da mobile */
     }
 
     .sidebar {
-        width: 85%;
-        right: -85%;
+        width: 85%; /* Grandezza della sidebar da mobile */
+        right: -85%; /* Nascondere l'elemento fuori dallo schermo da mobile */
     }
 
     .sidebar a {
-        font-size: 20px;
-        padding: 20px;
+        font-size: 20px; /* Grandezza del testo da mobile */
+        padding: 20px; /* Distanza interna degli elementi da mobile */
     }
 
     p {
-        line-height: 1.6;
+        line-height: 1.6; /* Altezza della distanza tra le righe dei testi da mobile */
     }
 }
 
