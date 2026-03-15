@@ -176,6 +176,40 @@
 
 /* ======================================== */
 
+/*==========================================
+    CONTENT LAYOUT
+============================================ */
+.content-layout {
+
+    display: flex; /* Strumento flexbox per allineare gli elementi su un asse orizzontale */
+    gap: 40px;  /* Distanza minima tra i contenuti all'interno del contenitore */
+
+    align-items: center; /* Allineamento centrale orizzontalmente dei elementi nel contenitore */
+}
+
+/* TESTO */
+.text-section {
+    
+    flex: 1; /* Prende il 50% dello spazio Flex del contenitore */
+
+}
+
+/* IMMAGINE */
+.image-section {
+
+    flex: 1; /* Prende il 50% dello spazio Flex del contenitore */
+    text-align: center; /* Allinea l'elemento centrale orizzontalmente */
+
+}
+
+.image-section img {
+
+    max-width: 100%; /* L'immagine all'interno del contenitore prende il 100% di grandezza del contenitore */
+    height: auto; /* L'altezza dell'immagine è automatica in proporzione della grandezza */
+}
+
+/* ======================================== */
+
 /*===========================================
     FOOTER
 ============================================= */
