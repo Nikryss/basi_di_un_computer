@@ -317,6 +317,18 @@ html {
 /*==========================================
     CONTENT LAYOUT
 ============================================ */
+.content-box {
+
+    max-width: 1200px;
+    margin: 80px auto;
+
+    background: white;
+    padding: 60px;
+
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
 .content-layout {
 
     display: flex; /* Strumento flexbox per allineare gli elementi su un asse orizzontale */
@@ -334,11 +346,27 @@ html {
 
 }
 
+.text-section h2 {
+
+    font-size: 32px;
+    margin-bottom: 20px;
+    
+}
+
+.text-section p {
+    
+    font-size: 18px;
+    line-height: 1.6;
+    color: #334155;
+}
+
 /* IMMAGINE */
 .image-section {
 
     flex: 1; /* Prende il 50% dello spazio Flex del contenitore */
     text-align: center; /* Allinea l'elemento centrale orizzontalmente */
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -346,6 +374,7 @@ html {
 
     max-width: 100%; /* L'immagine all'interno del contenitore prende il 100% di grandezza del contenitore */
     height: auto; /* L'altezza dell'immagine è automatica in proporzione della grandezza */
+    border-radius: 8px;
 }
 
 /* ======================================== */
@@ -430,6 +459,10 @@ body {
 
     p {
         line-height: 1.6; /* Altezza della distanza tra le righe dei testi da mobile */
+    }
+
+    .content-layout {
+        flex-direction: column; 
     }
 }
 
